@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name projector_bulb)(type KiCad)(uri ${KIPRJMOD}/projector_bulb.pretty)(options "")(descr ""))
+)
