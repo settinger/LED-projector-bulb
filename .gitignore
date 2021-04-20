@@ -1,6 +1,9 @@
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
 # Format documentation: http://kicad-pcb.org/help/file-formats/
 
+# Per the license agreement I can't distribute this 3d file from JST
+/projector_bulb.pretty/BM02B-XASS-TF.STEP
+
 # Temporary files
 *.000
 *.bak
