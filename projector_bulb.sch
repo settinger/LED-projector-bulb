@@ -483,8 +483,8 @@ Wire Wire Line
 	3300 2175 1375 2175
 Wire Wire Line
 	1375 2175 1375 1975
-Text Notes 775  1825 0    50   ~ 0
-GX17q base
+Text Notes 750  1950 0    50   ~ 0
+GX17q base\nSupplies 21VAC
 Text Notes 1375 1050 0    50   ~ 0
 help how do i choose the right fuse and ICL
 Wire Notes Line
