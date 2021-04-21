@@ -146,9 +146,9 @@ F 3 "~" H 5375 2325 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2875 2000 3675 2000
+	2875 2000 3400 2000
 Wire Wire Line
-	2875 2650 3675 2650
+	2875 2650 3400 2650
 $Comp
 L Connector:Conn_01x01_Male J9
 U 1 1 5F0E88B0
@@ -385,7 +385,7 @@ U 1 1 60845C9A
 P 875 3050
 F 0 "J12" V 925 3100 50  0000 L CNN
 F 1 "mount_1" V 1025 3100 50  0000 L CNN
-F 2 "projector_bulb:wuerth_7466303R" H 875 3050 50  0001 C CNN
+F 2 "projector_bulb:wuerth_7466310R" H 875 3050 50  0001 C CNN
 F 3 "~" H 875 3050 50  0001 C CNN
 	1    875  3050
 	0    1    1    0   
@@ -396,7 +396,7 @@ U 1 1 60845CA0
 P 875 3525
 F 0 "J11" V 925 3575 50  0000 L CNN
 F 1 "mount_2" V 1025 3575 50  0000 L CNN
-F 2 "projector_bulb:wuerth_7466303R" H 875 3525 50  0001 C CNN
+F 2 "projector_bulb:wuerth_7466310R" H 875 3525 50  0001 C CNN
 F 3 "~" H 875 3525 50  0001 C CNN
 	1    875  3525
 	0    -1   -1   0   
@@ -419,7 +419,7 @@ U 1 1 607DE2F9
 P 4800 2275
 F 0 "J5" H 4700 2275 50  0000 C CNN
 F 1 "to_base" H 4625 2200 50  0000 C CNN
-F 2 "projector_bulb:JST_XA_1x02_P2.50mm_SMD" H 4800 2275 50  0001 C CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_505405-0270_1x02-1MP_P1.50mm_Vertical" H 4800 2275 50  0001 C CNN
 F 3 "~" H 4800 2275 50  0001 C CNN
 	1    4800 2275
 	1    0    0    -1  
@@ -517,4 +517,25 @@ Wire Wire Line
 Connection ~ 7250 2125
 Wire Wire Line
 	8550 3075 8975 3075
+$Comp
+L Device:R R6
+U 1 1 607FA280
+P 3400 2300
+F 0 "R6" H 3450 2300 50  0000 L CNN
+F 1 "1M" V 3400 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3330 2300 50  0001 C CNN
+F 3 "~" H 3400 2300 50  0001 C CNN
+	1    3400 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2150 3400 2000
+Connection ~ 3400 2000
+Wire Wire Line
+	3400 2000 3675 2000
+Wire Wire Line
+	3400 2450 3400 2650
+Connection ~ 3400 2650
+Wire Wire Line
+	3400 2650 3675 2650
 $EndSCHEMATC
