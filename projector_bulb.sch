@@ -69,10 +69,10 @@ Wire Wire Line
 	4375 2225 4375 2425
 Connection ~ 4375 2425
 $Comp
-L Connector:Conn_01x01_Male J2
+L Connector:Conn_01x01_Male J1
 U 1 1 5F0CEA35
 P 5375 2050
-F 0 "J2" H 5450 2000 50  0000 L CNN
+F 0 "J1" H 5450 2000 50  0000 L CNN
 F 1 "to_upright_+" H 4950 2000 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_3.0x3.0mm_Drill1.5mm" H 5375 2050 50  0001 C CNN
 F 3 "~" H 5375 2050 50  0001 C CNN
@@ -80,10 +80,10 @@ F 3 "~" H 5375 2050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J4
+L Connector:Conn_01x01_Male J2
 U 1 1 5F0CEF92
 P 5375 2150
-F 0 "J4" H 5550 2200 50  0000 R CNN
+F 0 "J2" H 5550 2200 50  0000 R CNN
 F 1 "to_upright_-" H 5425 2200 50  0000 R CNN
 F 2 "TestPoint:TestPoint_THTPad_3.0x3.0mm_Drill1.5mm" H 5375 2150 50  0001 C CNN
 F 3 "~" H 5375 2150 50  0001 C CNN
@@ -265,10 +265,10 @@ F 3 "~" V 4550 5200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x02_Odd_Even J7
+L Connector_Generic:Conn_02x02_Odd_Even J4
 U 1 1 6083069C
 P 5425 5650
-F 0 "J7" H 5475 5775 50  0000 C CNN
+F 0 "J4" H 5475 5775 50  0000 C CNN
 F 1 "Conn_02x02_Odd_Even" H 5475 5776 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD" H 5425 5650 50  0001 C CNN
 F 3 "~" H 5425 5650 50  0001 C CNN
@@ -293,10 +293,10 @@ Wire Wire Line
 	5750 5750 5725 5750
 Connection ~ 5750 5700
 $Comp
-L Connector_Generic:Conn_02x02_Odd_Even J8
+L Connector_Generic:Conn_02x02_Odd_Even J5
 U 1 1 6083618D
 P 7425 4275
-F 0 "J8" H 7475 4400 50  0000 C CNN
+F 0 "J5" H 7475 4400 50  0000 C CNN
 F 1 "Conn_02x02_Odd_Even" H 7475 4401 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD" H 7425 4275 50  0001 C CNN
 F 3 "~" H 7425 4275 50  0001 C CNN
@@ -318,12 +318,12 @@ Wire Wire Line
 Wire Wire Line
 	7150 4275 7225 4275
 Text Notes 1350 2775 0    50   ~ 0
-mechanical mounting blocks\nscrew into aluminum PCB
+Mechanical mounting blocks\nhold aluminum PCB with bolts
 $Comp
-L Connector:Conn_01x02_Male J5
+L Connector:Conn_01x02_Male J3
 U 1 1 607DE2F9
 P 1750 4950
-F 0 "J5" H 1650 4950 50  0000 C CNN
+F 0 "J3" H 1650 4950 50  0000 C CNN
 F 1 "to_base" H 1575 4875 50  0000 C CNN
 F 2 "Connector_Molex:Molex_CLIK-Mate_505405-0270_1x02-1MP_P1.50mm_Vertical" H 1750 4950 50  0001 C CNN
 F 3 "~" H 1750 4950 50  0001 C CNN
@@ -350,21 +350,10 @@ U 1 1 5F0DCD7B
 P 4350 4800
 F 0 "L1" V 4275 4875 50  0000 C CNN
 F 1 "47u" V 4275 4725 50  0000 C CNN
-F 2 "projector_bulb:L_KEMET_MPLCV_0654_7.9x6.5mm" H 4350 4800 50  0001 C CNN
+F 2 "projector_bulb:panasonic_PCC-M0748M" H 4350 4800 50  0001 C CNN
 F 3 "~" H 4350 4800 50  0001 C CNN
 	1    4350 4800
 	0    1    -1   0   
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 608549C3
-P 4650 4375
-F 0 "R4" V 4575 4375 50  0000 C CNN
-F 1 "0Ω" V 4650 4375 50  0000 C CNN
-F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4580 4375 50  0001 C CNN
-F 3 "~" H 4650 4375 50  0001 C CNN
-	1    4650 4375
-	0    -1   1    0   
 $EndComp
 Connection ~ 5175 2425
 Wire Wire Line
@@ -378,17 +367,6 @@ Connection ~ 1950 4800
 Wire Wire Line
 	1950 5325 1950 5200
 Connection ~ 1950 5200
-$Comp
-L Device:R R5
-U 1 1 6087C58A
-P 4125 5200
-F 0 "R5" V 4200 5200 50  0000 C CNN
-F 1 "0Ω" V 4125 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4055 5200 50  0001 C CNN
-F 3 "~" H 4125 5200 50  0001 C CNN
-	1    4125 5200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4400 5700 4825 5700
 $Comp
@@ -472,9 +450,9 @@ Wire Wire Line
 Wire Wire Line
 	1375 1400 1375 1575
 Wire Wire Line
-	2075 1400 2250 1400
+	2075 1400 2175 1400
 Wire Wire Line
-	2550 1400 3300 1400
+	2550 1400 2625 1400
 Wire Wire Line
 	3300 1400 3300 1475
 Wire Wire Line
@@ -484,9 +462,7 @@ Wire Wire Line
 Wire Wire Line
 	1375 2175 1375 1975
 Text Notes 750  1950 0    50   ~ 0
-GX17q base\nSupplies 21VAC
-Text Notes 1375 1050 0    50   ~ 0
-help how do i choose the right fuse and ICL
+GX17q base\n(21VAC)
 Wire Notes Line
 	625  725  6025 725 
 Wire Notes Line
@@ -497,10 +473,6 @@ Wire Notes Line
 	625  2875 625  725 
 Text Notes 4400 1150 0    150  ~ 0
 BASE PCB
-Wire Wire Line
-	3900 5200 3975 5200
-Wire Wire Line
-	4275 5200 4400 5200
 Wire Wire Line
 	4650 5200 4725 5200
 Wire Wire Line
@@ -521,11 +493,7 @@ Wire Wire Line
 Connection ~ 4400 5200
 Wire Wire Line
 	4400 5200 4450 5200
-Wire Wire Line
-	4025 4375 4500 4375
 Connection ~ 4025 4375
-Wire Wire Line
-	4800 4375 5850 4375
 Wire Wire Line
 	5850 4375 5850 5700
 Text Notes 5900 5825 0    50   ~ 0
@@ -563,4 +531,154 @@ Text Notes 1400 3875 0    150  ~ 0
 UPRIGHT PCB
 Text Notes 1425 4075 0    50   ~ 0
 One-sided aluminum substrate board\nAmple heatsink on back
+$Comp
+L Mechanical:Heatsink HS1
+U 1 1 608CAEB8
+P 8550 5875
+F 0 "HS1" H 8692 5996 50  0000 L CNN
+F 1 "Heatsink" H 8692 5905 50  0000 L CNN
+F 2 "projector_bulb:Heatsink_35x35x18mm" H 8562 5875 50  0001 C CNN
+F 3 "~" H 8562 5875 50  0001 C CNN
+	1    8550 5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L projector_bulb:Lens LENS1
+U 1 1 608E1FCA
+P 9300 5800
+F 0 "LENS1" H 9420 5846 50  0000 L CNN
+F 1 "Lens" H 9420 5755 50  0000 L CNN
+F 2 "projector_bulb:LENS_LEDIL_CA16370_HB-SQ-W" H 8510 5520 150 0001 C CNN
+F 3 "" H 8510 5520 150 0001 C CNN
+	1    9300 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 6084675C
+P 2400 1600
+F 0 "JP1" H 2400 1525 50  0000 C CNN
+F 1 "ICL Bypass" H 2400 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2400 1600 50  0001 C CNN
+F 3 "~" H 2400 1600 50  0001 C CNN
+	1    2400 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1600 2175 1600
+Wire Wire Line
+	2175 1600 2175 1400
+Connection ~ 2175 1400
+Wire Wire Line
+	2175 1400 2250 1400
+Wire Wire Line
+	2500 1600 2625 1600
+Wire Wire Line
+	2625 1600 2625 1400
+Connection ~ 2625 1400
+Wire Wire Line
+	2625 1400 3300 1400
+Text Notes 2100 5425 0    50   ~ 0
+https://www.diodes.com/assets/Datasheets/PAM2863.pdf
+$Comp
+L Device:Jumper_NC_Small JP2
+U 1 1 608401DC
+P 4125 5200
+F 0 "JP2" H 4125 5125 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4125 5321 50  0001 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 4125 5200 50  0001 C CNN
+F 3 "~" H 4125 5200 50  0001 C CNN
+	1    4125 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 5200 4025 5200
+Wire Wire Line
+	4225 5200 4400 5200
+$Comp
+L Device:Jumper_NC_Small JP3
+U 1 1 6084D17A
+P 4650 4375
+F 0 "JP3" H 4650 4300 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4650 4496 50  0001 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 4650 4375 50  0001 C CNN
+F 3 "~" H 4650 4375 50  0001 C CNN
+	1    4650 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4025 4375 4550 4375
+Wire Wire Line
+	4750 4375 5850 4375
+$Comp
+L Connector:TestPoint TP1
+U 1 1 608553C5
+P 1950 4675
+F 0 "TP1" H 2008 4793 50  0000 L CNN
+F 1 "TestPoint" H 2008 4702 50  0000 L CNN
+F 2 "projector_bulb:Test_Point_0603" H 2150 4675 50  0001 C CNN
+F 3 "~" H 2150 4675 50  0001 C CNN
+	1    1950 4675
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 4675
+$Comp
+L Connector:TestPoint TP2
+U 1 1 6083D89B
+P 1950 5325
+F 0 "TP2" H 2000 5600 50  0000 L CNN
+F 1 "TestPoint" H 2000 5500 50  0000 L CNN
+F 2 "projector_bulb:Test_Point_0603" H 2150 5325 50  0001 C CNN
+F 3 "~" H 2150 5325 50  0001 C CNN
+	1    1950 5325
+	1    0    0    1   
+$EndComp
+Connection ~ 1950 5325
+$Comp
+L Connector:TestPoint TP3
+U 1 1 60847365
+P 4025 4800
+F 0 "TP3" H 4075 5075 50  0000 L CNN
+F 1 "TestPoint" H 4075 4975 50  0000 L CNN
+F 2 "projector_bulb:Test_Point_0603" H 4225 4800 50  0001 C CNN
+F 3 "~" H 4225 4800 50  0001 C CNN
+	1    4025 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 6085A37E
+P 7150 4125
+F 0 "TP4" H 7200 4400 50  0000 L CNN
+F 1 "TestPoint" H 7200 4300 50  0000 L CNN
+F 2 "projector_bulb:Test_Point_0603" H 7350 4125 50  0001 C CNN
+F 3 "~" H 7350 4125 50  0001 C CNN
+	1    7150 4125
+	-1   0    0    -1  
+$EndComp
+Connection ~ 7150 4125
+$Comp
+L Connector:TestPoint TP5
+U 1 1 6085F6FA
+P 4400 5700
+F 0 "TP5" V 4350 5875 50  0000 L CNN
+F 1 "TestPoint" V 4450 5875 50  0000 L CNN
+F 2 "projector_bulb:Test_Point_0603" H 4600 5700 50  0001 C CNN
+F 3 "~" H 4600 5700 50  0001 C CNN
+	1    4400 5700
+	0    -1   1    0   
+$EndComp
+Connection ~ 4400 5700
+$Comp
+L Connector:TestPoint TP6
+U 1 1 60860C79
+P 4725 4800
+F 0 "TP6" V 4675 4975 50  0000 L CNN
+F 1 "TestPoint" V 4775 4975 50  0000 L CNN
+F 2 "projector_bulb:Test_Point_0603" H 4925 4800 50  0001 C CNN
+F 3 "~" H 4925 4800 50  0001 C CNN
+	1    4725 4800
+	0    1    -1   0   
+$EndComp
+Connection ~ 4725 4800
 $EndSCHEMATC
