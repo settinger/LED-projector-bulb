@@ -18,7 +18,7 @@ L Device:D_Bridge_+-AA D1
 U 1 1 5F0C9094
 P 3300 1775
 F 0 "D1" H 3600 2000 50  0000 L CNN
-F 1 "D_Bridge_+-AA" H 3600 1900 50  0000 L CNN
+F 1 "Bridge Rectifier" H 3600 1900 50  0000 L CNN
 F 2 "projector_bulb:Diode_Bridge_Comchip_2A" H 3300 1775 50  0001 C CNN
 F 3 "~" H 3300 1775 50  0001 C CNN
 	1    3300 1775
@@ -102,12 +102,12 @@ F 3 "" H 3850 2425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L Device:R R2
 U 1 1 5F0D273E
 P 5050 5525
-F 0 "R1" V 5150 5475 50  0000 L CNN
+F 0 "R2" V 5150 5475 50  0000 L CNN
 F 1 "0.100" V 5225 5425 50  0000 L CNN
-F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4980 5525 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4980 5525 50  0001 C CNN
 F 3 "~" H 5050 5525 50  0001 C CNN
 	1    5050 5525
 	0    1    1    0   
@@ -210,12 +210,12 @@ GND_BASE
 Wire Wire Line
 	5175 2425 5300 2425
 $Comp
-L Device:R R2
+L Device:R R1
 U 1 1 6080608E
 P 5050 5850
-F 0 "R2" V 5150 5800 50  0000 L CNN
+F 0 "R1" V 5150 5800 50  0000 L CNN
 F 1 "0.200" V 5225 5750 50  0000 L CNN
-F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4980 5850 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4980 5850 50  0001 C CNN
 F 3 "~" H 5050 5850 50  0001 C CNN
 	1    5050 5850
 	0    1    1    0   
@@ -232,17 +232,6 @@ Connection ~ 4825 5700
 Wire Wire Line
 	4825 5700 4825 5525
 $Comp
-L Device:D_Schottky D2
-U 1 1 5F0E7327
-P 4025 4600
-F 0 "D2" V 3975 4725 50  0000 C CNN
-F 1 "D_Schottky" V 4050 4875 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" H 4025 4600 50  0001 C CNN
-F 3 "~" H 4025 4600 50  0001 C CNN
-	1    4025 4600
-	0    1    1    0   
-$EndComp
-$Comp
 L projector_bulb:PAM2863 U1
 U 1 1 6078D646
 P 3450 5000
@@ -257,8 +246,8 @@ $Comp
 L Device:LED_Small_ALT D3
 U 1 1 6081ECC4
 P 4550 5200
-F 0 "D3" H 4600 5100 50  0000 R CNN
-F 1 "LED_Small_ALT" V 4505 5130 50  0001 R CNN
+F 0 "D3" H 4550 5100 50  0000 C CNN
+F 1 "LED" H 4550 5025 50  0000 C CNN
 F 2 "LED_SMD:LED_Cree-XHP50_12V" V 4550 5200 50  0001 C CNN
 F 3 "~" V 4550 5200 50  0001 C CNN
 	1    4550 5200
@@ -267,13 +256,13 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x02_Odd_Even J4
 U 1 1 6083069C
-P 5425 5650
-F 0 "J4" H 5475 5775 50  0000 C CNN
-F 1 "Conn_02x02_Odd_Even" H 5475 5776 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD" H 5425 5650 50  0001 C CNN
-F 3 "~" H 5425 5650 50  0001 C CNN
-	1    5425 5650
-	1    0    0    -1  
+P 5525 5650
+F 0 "J4" H 5575 5775 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 5575 5776 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical_SMD" H 5525 5650 50  0001 C CNN
+F 3 "~" H 5525 5650 50  0001 C CNN
+	1    5525 5650
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	5200 5850 5225 5850
@@ -348,8 +337,8 @@ $Comp
 L Device:L L1
 U 1 1 5F0DCD7B
 P 4350 4800
-F 0 "L1" V 4275 4875 50  0000 C CNN
-F 1 "47u" V 4275 4725 50  0000 C CNN
+F 0 "L1" V 4425 4700 50  0000 C CNN
+F 1 "47μ" V 4425 4850 50  0000 C CNN
 F 2 "projector_bulb:panasonic_PCC-M0748M" H 4350 4800 50  0001 C CNN
 F 3 "~" H 4350 4800 50  0001 C CNN
 	1    4350 4800
@@ -490,7 +479,6 @@ Wire Wire Line
 	4025 4450 4025 4375
 Wire Wire Line
 	4400 5700 4400 5200
-Connection ~ 4400 5200
 Wire Wire Line
 	4400 5200 4450 5200
 Connection ~ 4025 4375
@@ -581,36 +569,6 @@ Wire Wire Line
 Text Notes 2100 5425 0    50   ~ 0
 https://www.diodes.com/assets/Datasheets/PAM2863.pdf
 $Comp
-L Device:Jumper_NC_Small JP2
-U 1 1 608401DC
-P 4125 5200
-F 0 "JP2" H 4125 5125 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 4125 5321 50  0001 C CNN
-F 2 "Resistor_SMD:R_2512_6332Metric" H 4125 5200 50  0001 C CNN
-F 3 "~" H 4125 5200 50  0001 C CNN
-	1    4125 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 5200 4025 5200
-Wire Wire Line
-	4225 5200 4400 5200
-$Comp
-L Device:Jumper_NC_Small JP3
-U 1 1 6084D17A
-P 4650 4375
-F 0 "JP3" H 4650 4300 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 4650 4496 50  0001 C CNN
-F 2 "Resistor_SMD:R_2512_6332Metric" H 4650 4375 50  0001 C CNN
-F 3 "~" H 4650 4375 50  0001 C CNN
-	1    4650 4375
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4025 4375 4550 4375
-Wire Wire Line
-	4750 4375 5850 4375
-$Comp
 L Connector:TestPoint TP1
 U 1 1 608553C5
 P 1950 4675
@@ -638,8 +596,8 @@ $Comp
 L Connector:TestPoint TP3
 U 1 1 60847365
 P 4025 4800
-F 0 "TP3" H 4075 5075 50  0000 L CNN
-F 1 "TestPoint" H 4075 4975 50  0000 L CNN
+F 0 "TP3" H 4075 4975 50  0000 L CNN
+F 1 "TestPoint" H 4075 4900 50  0000 L CNN
 F 2 "projector_bulb:Test_Point_0603" H 4225 4800 50  0001 C CNN
 F 3 "~" H 4225 4800 50  0001 C CNN
 	1    4025 4800
@@ -683,4 +641,33 @@ $EndComp
 Connection ~ 4725 4800
 Text Notes 9125 5425 0    50   ~ 0
 LEDiL High Bay\nHB-SQ-W
+Wire Wire Line
+	4025 4375 5850 4375
+$Comp
+L Device:D_Schottky D2
+U 1 1 5F0E7327
+P 4025 4600
+F 0 "D2" V 3900 4675 50  0000 L CNN
+F 1 "Schottky" V 3975 4675 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 4025 4600 50  0001 C CNN
+F 3 "~" H 4025 4600 50  0001 C CNN
+	1    4025 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP2
+U 1 1 608401DC
+P 4125 5200
+F 0 "JP2" H 4125 5125 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4125 5321 50  0001 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 4125 5200 50  0001 C CNN
+F 3 "~" H 4125 5200 50  0001 C CNN
+	1    4125 5200
+	1    0    0    -1  
+$EndComp
+Connection ~ 4400 5200
+Wire Wire Line
+	4225 5200 4400 5200
+Wire Wire Line
+	3900 5200 4025 5200
 $EndSCHEMATC
