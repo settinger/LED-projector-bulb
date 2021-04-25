@@ -3,6 +3,8 @@
 
 # Per the license agreement I can't distribute this 3d file from JST
 /projector_bulb.pretty/BM02B-XASS-TF.STEP
+# ...Likewise with this 3d file from Molex
+/projector_bulb.pretty/MOLEX_5025840260.wrl
 
 # Temporary files
 *.000
