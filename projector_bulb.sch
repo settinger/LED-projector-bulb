@@ -115,12 +115,12 @@ $EndComp
 $Comp
 L Device:C C3
 U 1 1 5F0E53C4
-P 2325 5000
-F 0 "C3" H 2425 4975 50  0000 L CNN
-F 1 "22u" H 2425 5050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2363 4850 50  0001 C CNN
-F 3 "~" H 2325 5000 50  0001 C CNN
-	1    2325 5000
+P 2200 5000
+F 0 "C3" H 2300 4975 50  0000 L CNN
+F 1 "10μ" H 2300 5050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2238 4850 50  0001 C CNN
+F 3 "~" H 2200 5000 50  0001 C CNN
+	1    2200 5000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -181,24 +181,19 @@ Text GLabel 7075 4125 0    50   Input ~ 0
 DIMMING
 Wire Wire Line
 	9250 4050 9250 4225
-Wire Wire Line
-	2925 5000 3000 5000
-Text GLabel 2925 5000 0    50   Input ~ 0
+Text GLabel 3000 5000 0    50   Input ~ 0
 DIMMING
 Wire Wire Line
-	3000 4800 2325 4800
+	3000 4800 2525 4800
 Wire Wire Line
-	2325 4800 2325 4850
+	2200 4800 2200 4850
 Wire Wire Line
-	2325 5150 2325 5200
-Wire Wire Line
-	2325 5200 3000 5200
+	2200 5150 2200 5200
 Text GLabel 1850 4675 0    50   Input ~ 0
 VIN_UPRIGHT
 Connection ~ 2325 4800
 Text GLabel 1850 5325 0    50   Input ~ 0
 GND_UPRIGHT
-Connection ~ 2325 5200
 Wire Wire Line
 	2325 4375 2325 4800
 Text GLabel 5300 1775 2    50   Input ~ 0
@@ -326,11 +321,11 @@ Wire Wire Line
 Wire Wire Line
 	1950 4950 1950 4800
 Wire Wire Line
-	1950 4800 2325 4800
+	1950 4800 2200 4800
 Wire Wire Line
 	1950 5050 1950 5200
 Wire Wire Line
-	1950 5200 2325 5200
+	1950 5200 2200 5200
 Wire Wire Line
 	2325 4375 4025 4375
 $Comp
@@ -670,4 +665,31 @@ Wire Wire Line
 	4225 5200 4400 5200
 Wire Wire Line
 	3900 5200 4025 5200
+Connection ~ 2200 4800
+Wire Wire Line
+	2200 4800 2325 4800
+Connection ~ 2200 5200
+Wire Wire Line
+	2200 5200 2525 5200
+$Comp
+L Device:C C4
+U 1 1 608C1483
+P 2525 5000
+F 0 "C4" H 2625 4975 50  0000 L CNN
+F 1 "10μ" H 2625 5050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2563 4850 50  0001 C CNN
+F 3 "~" H 2525 5000 50  0001 C CNN
+	1    2525 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2525 4800 2525 4850
+Wire Wire Line
+	2525 5150 2525 5200
+Connection ~ 2525 4800
+Wire Wire Line
+	2525 4800 2325 4800
+Connection ~ 2525 5200
+Wire Wire Line
+	2525 5200 3000 5200
 $EndSCHEMATC
