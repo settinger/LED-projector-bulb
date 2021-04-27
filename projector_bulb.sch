@@ -460,7 +460,7 @@ BASE PCB
 Wire Wire Line
 	4650 5200 4725 5200
 Wire Wire Line
-	4725 5200 4725 4800
+	4725 5200 4725 5025
 Wire Wire Line
 	4725 4800 4500 4800
 Wire Wire Line
@@ -474,8 +474,6 @@ Wire Wire Line
 	4025 4450 4025 4375
 Wire Wire Line
 	4400 5700 4400 5200
-Wire Wire Line
-	4400 5200 4450 5200
 Connection ~ 4025 4375
 Wire Wire Line
 	5850 4375 5850 5700
@@ -692,4 +690,28 @@ Wire Wire Line
 Connection ~ 2525 5200
 Wire Wire Line
 	2525 5200 3000 5200
+$Comp
+L Device:C_Small C5
+U 1 1 60877489
+P 4550 5025
+F 0 "C5" V 4400 5125 50  0000 C CNN
+F 1 "1μ" V 4475 5125 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4550 5025 50  0001 C CNN
+F 3 "~" H 4550 5025 50  0001 C CNN
+	1    4550 5025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 5200 4450 5200
+Wire Wire Line
+	4400 5200 4400 5025
+Wire Wire Line
+	4400 5025 4450 5025
+Wire Wire Line
+	4650 5025 4725 5025
+Connection ~ 4725 5025
+Wire Wire Line
+	4725 5025 4725 4800
+Text Notes 4775 5050 0    50   ~ 0
+C5 optional
 $EndSCHEMATC
