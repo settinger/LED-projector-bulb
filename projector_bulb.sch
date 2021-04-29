@@ -16,16 +16,16 @@ $EndDescr
 $Comp
 L Device:D_Bridge_+-AA D1
 U 1 1 5F0C9094
-P 3300 1775
-F 0 "D1" H 3600 2000 50  0000 L CNN
-F 1 "Bridge Rectifier" H 3600 1900 50  0000 L CNN
-F 2 "projector_bulb:Diode_Bridge_Comchip_2A" H 3300 1775 50  0001 C CNN
-F 3 "~" H 3300 1775 50  0001 C CNN
-	1    3300 1775
+P 2475 1775
+F 0 "D1" H 2625 2025 50  0000 L CNN
+F 1 "Bridge Rectifier" H 2625 1950 50  0000 L CNN
+F 2 "projector_bulb:Diode_Bridge_Comchip_2A" H 2475 1775 50  0001 C CNN
+F 3 "~" H 2475 1775 50  0001 C CNN
+	1    2475 1775
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 1775 3000 2425
+	2175 1775 2175 2425
 $Comp
 L Device:CP C1
 U 1 1 5F0CAAEC
@@ -49,12 +49,7 @@ F 3 "~" H 4375 2075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 2425 3850 2425
-Wire Wire Line
-	3600 1775 3850 1775
-Wire Wire Line
 	3850 1925 3850 1775
-Connection ~ 3850 1775
 Wire Wire Line
 	3850 1775 4375 1775
 Wire Wire Line
@@ -301,7 +296,7 @@ Wire Wire Line
 	7150 4125 7150 4275
 Wire Wire Line
 	7150 4275 7225 4275
-Text Notes 1350 2775 0    50   ~ 0
+Text Notes 775  2800 0    50   ~ 0
 Mechanical mounting blocks\nhold aluminum PCB with bolts
 $Comp
 L Connector:Conn_01x02_Male J3
@@ -377,12 +372,12 @@ Wire Wire Line
 $Comp
 L Device:Thermistor_NTC TH1
 U 1 1 60818BC9
-P 2400 1400
-F 0 "TH1" V 2110 1400 50  0000 C CNN
-F 1 "Thermistor_NTC" V 2201 1400 50  0000 C CNN
-F 2 "Varistor:RV_Disc_D21.5mm_W4.3mm_P10mm" H 2400 1450 50  0001 C CNN
-F 3 "~" H 2400 1450 50  0001 C CNN
-	1    2400 1400
+P 3450 1775
+F 0 "TH1" V 3200 1775 50  0000 C CNN
+F 1 "Thermistor_NTC" V 3275 1900 50  0000 C CNN
+F 2 "Varistor:RV_Disc_D21.5mm_W4.3mm_P10mm" H 3450 1825 50  0001 C CNN
+F 3 "~" H 3450 1825 50  0001 C CNN
+	1    3450 1775
 	0    1    1    0   
 $EndComp
 $Comp
@@ -399,23 +394,23 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 6081C9A0
-P 1375 2475
-F 0 "H1" H 1475 2521 50  0000 L CNN
-F 1 "MountingHole" H 1475 2430 50  0000 L CNN
-F 2 "projector_bulb:wuerth_7466310R" H 1375 2475 50  0001 C CNN
-F 3 "~" H 1375 2475 50  0001 C CNN
-	1    1375 2475
+P 800 2500
+F 0 "H1" H 900 2546 50  0000 L CNN
+F 1 "MountingHole" H 900 2455 50  0000 L CNN
+F 2 "projector_bulb:wuerth_7466310R" H 800 2500 50  0001 C CNN
+F 3 "~" H 800 2500 50  0001 C CNN
+	1    800  2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 6081D0A1
-P 2075 2475
-F 0 "H2" H 2175 2521 50  0000 L CNN
-F 1 "MountingHole" H 2175 2430 50  0000 L CNN
-F 2 "projector_bulb:wuerth_7466310R" H 2075 2475 50  0001 C CNN
-F 3 "~" H 2075 2475 50  0001 C CNN
-	1    2075 2475
+P 1500 2500
+F 0 "H2" H 1600 2546 50  0000 L CNN
+F 1 "MountingHole" H 1600 2455 50  0000 L CNN
+F 2 "projector_bulb:wuerth_7466310R" H 1500 2500 50  0001 C CNN
+F 3 "~" H 1500 2500 50  0001 C CNN
+	1    1500 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -434,15 +429,11 @@ Wire Wire Line
 Wire Wire Line
 	1375 1400 1375 1575
 Wire Wire Line
-	2075 1400 2175 1400
+	3600 1775 3675 1775
 Wire Wire Line
-	2550 1400 2625 1400
+	2475 1400 2475 1475
 Wire Wire Line
-	3300 1400 3300 1475
-Wire Wire Line
-	3300 2075 3300 2175
-Wire Wire Line
-	3300 2175 1375 2175
+	2475 2075 2475 2175
 Wire Wire Line
 	1375 2175 1375 1975
 Text Notes 750  1950 0    50   ~ 0
@@ -455,7 +446,7 @@ Wire Notes Line
 	6025 2875 625  2875
 Wire Notes Line
 	625  2875 625  725 
-Text Notes 4400 1150 0    150  ~ 0
+Text Notes 725  1025 0    150  ~ 0
 BASE PCB
 Wire Wire Line
 	4650 5200 4725 5200
@@ -537,28 +528,22 @@ $EndComp
 $Comp
 L Device:Jumper_NC_Small JP1
 U 1 1 6084675C
-P 2400 1600
-F 0 "JP1" H 2400 1525 50  0000 C CNN
-F 1 "ICL Bypass" H 2400 1450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2400 1600 50  0001 C CNN
-F 3 "~" H 2400 1600 50  0001 C CNN
-	1    2400 1600
+P 3450 1975
+F 0 "JP1" H 3450 1900 50  0000 C CNN
+F 1 "ICL Bypass" H 3450 1825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3450 1975 50  0001 C CNN
+F 3 "~" H 3450 1975 50  0001 C CNN
+	1    3450 1975
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2300 1600 2175 1600
+	3350 1975 3225 1975
 Wire Wire Line
-	2175 1600 2175 1400
-Connection ~ 2175 1400
+	3225 1775 3300 1775
 Wire Wire Line
-	2175 1400 2250 1400
+	3550 1975 3675 1975
 Wire Wire Line
-	2500 1600 2625 1600
-Wire Wire Line
-	2625 1600 2625 1400
-Connection ~ 2625 1400
-Wire Wire Line
-	2625 1400 3300 1400
+	3675 1975 3675 1775
 Text Notes 2100 5425 0    50   ~ 0
 https://www.diodes.com/assets/Datasheets/PAM2863.pdf
 $Comp
@@ -714,4 +699,21 @@ Wire Wire Line
 	4725 5025 4725 4800
 Text Notes 4775 5050 0    50   ~ 0
 C5 optional
+Wire Wire Line
+	1375 2175 2475 2175
+Wire Wire Line
+	2075 1400 2475 1400
+Wire Wire Line
+	3225 1775 3225 1975
+Wire Wire Line
+	2775 1775 3225 1775
+Connection ~ 3225 1775
+Wire Wire Line
+	3675 1775 3850 1775
+Connection ~ 3675 1775
+Connection ~ 3850 1775
+Wire Wire Line
+	2175 2425 3850 2425
+Text Notes 3050 1450 0    50   ~ 0
+The thermistor footprint is just two\nthrough-holes for mounting an off-\nboard part. It could be an NTC inrush\ncurrent limiter, or e.g. a TPS2490 circuit.\nSolder a jumper to JP1 to bypass this.
 $EndSCHEMATC
