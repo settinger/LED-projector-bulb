@@ -233,14 +233,14 @@ F 3 "https://www.diodes.com/assets/Datasheets/PAM2863.pdf" H 3450 5050 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_Small_ALT D3
+L Device:LED_PAD D3
 U 1 1 6081ECC4
-P 4550 5200
-F 0 "D3" H 4550 5100 50  0000 C CNN
-F 1 "LED" H 4550 5025 50  0000 C CNN
-F 2 "LED_SMD:LED_Cree-XHP50_12V" V 4550 5200 50  0001 C CNN
-F 3 "~" V 4550 5200 50  0001 C CNN
-	1    4550 5200
+P 4575 5200
+F 0 "D3" H 4350 5175 50  0000 C CNN
+F 1 "LED" H 4325 5100 50  0000 C CNN
+F 2 "LED_SMD:LED_Cree-XHP50_12V" V 4575 5200 50  0001 C CNN
+F 3 "~" V 4575 5200 50  0001 C CNN
+	1    4575 5200
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -448,8 +448,6 @@ Wire Notes Line
 	625  2875 625  725 
 Text Notes 725  1025 0    150  ~ 0
 BASE PCB
-Wire Wire Line
-	4650 5200 4725 5200
 Wire Wire Line
 	4725 5200 4725 5025
 Wire Wire Line
@@ -687,8 +685,6 @@ F 3 "~" H 4550 5025 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4400 5200 4450 5200
-Wire Wire Line
 	4400 5200 4400 5025
 Wire Wire Line
 	4400 5025 4450 5025
@@ -716,4 +712,17 @@ Wire Wire Line
 	2175 2425 3850 2425
 Text Notes 3050 1450 0    50   ~ 0
 The thermistor footprint is just two\nthrough-holes for mounting an off-\nboard part. It could be an NTC inrush\ncurrent limiter, or e.g. a TPS2490 circuit.\nSolder a jumper to JP1 to bypass this.
+Wire Wire Line
+	4425 5200 4400 5200
+$Comp
+L Connector:TestPoint TP7
+U 1 1 60A4C774
+P 4575 5400
+F 0 "TP7" V 4525 5575 50  0000 L CNN
+F 1 "TestPoint" V 4625 5575 50  0000 L CNN
+F 2 "projector_bulb:Test_Point_0603" H 4775 5400 50  0001 C CNN
+F 3 "~" H 4775 5400 50  0001 C CNN
+	1    4575 5400
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
