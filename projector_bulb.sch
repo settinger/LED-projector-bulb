@@ -397,7 +397,7 @@ U 1 1 6081C9A0
 P 800 2500
 F 0 "H1" H 900 2546 50  0000 L CNN
 F 1 "MountingHole" H 900 2455 50  0000 L CNN
-F 2 "projector_bulb:wuerth_7466310R" H 800 2500 50  0001 C CNN
+F 2 "projector_bulb:wuerth_7466313R" H 800 2500 50  0001 C CNN
 F 3 "~" H 800 2500 50  0001 C CNN
 	1    800  2500
 	1    0    0    -1  
@@ -408,7 +408,7 @@ U 1 1 6081D0A1
 P 1500 2500
 F 0 "H2" H 1600 2546 50  0000 L CNN
 F 1 "MountingHole" H 1600 2455 50  0000 L CNN
-F 2 "projector_bulb:wuerth_7466310R" H 1500 2500 50  0001 C CNN
+F 2 "projector_bulb:wuerth_7466313R" H 1500 2500 50  0001 C CNN
 F 3 "~" H 1500 2500 50  0001 C CNN
 	1    1500 2500
 	1    0    0    -1  

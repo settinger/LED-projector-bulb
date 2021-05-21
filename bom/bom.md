@@ -12,7 +12,7 @@
 | 5    | F1                           | 2.5 A Slow Blow            | 1206 (3216 Metric) | 1        | [507-1895-1-ND‎](https://www.digikey.com/product-detail/en/0685T2500-01/507-1895-1-ND/4968176/) | I've never had to pick a fuse for an AC load before, I have very little confidence in this fuse selection. |
 | 6    | LA1                          | Lamp base                  | GX17q              | 1        | | It's just four header pins. |
 | 7   | J1, J2                       | Molex CLIK-Mate 1.50 mm Cable Assembly | Off-board | 0.5    | [WM22838-ND‎](https://www.digikey.com/product-detail/en/0151350203/WM22838-ND/6833464/) | Cut cable assembly in half, solder bare wires to J1 and J2 on base PCB, plug the connector into J3. |
-| 8    | H1, H2                       | Würth Redcube Screw Terminal | 7.0×4.3 mm       | 2        | [732-10896-1-ND‎](https://www.digikey.com/product-detail/en/7466310R/732-10896-1-ND/6644302/) | It remains to be seen how effective these will be. |
+| 8    | H1, H2                       | Würth Redcube Screw Terminal | 7.0×4.3 mm       | 2        | [732-10897-1-ND](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/7466313R/6643993) | |
 | 9    | TH1                          | 5 Ω 5 A NTC Thermistor     | Off-board          | 1        | [495-2100-ND‎](https://www.digikey.com/product-detail/en/B57237S0509M000/495-2100-ND/739855/) | Inrush current limiter, might not be necessary. Do not solder JP1 if you plan to use TH1. |
 | 10   | *[no designator]*            | M3 bolt, 6mm length        | Off-board          | 2        | | Attaches upright PCB at terminals H1, H2. |
 
@@ -64,7 +64,7 @@
 | 19   | J1, J2                       | Molex CLIK-Mate 1.50 mm Cable Assembly | Off-board | 0.5   | [WM22838-ND‎](https://www.digikey.com/product-detail/en/0151350203/WM22838-ND/6833464/) | Cut cable assembly in half, solder bare wires to J1 and J2 on base PCB, plug the connector into J3. |
 | 20   | J3                           | Molex CLIK-Mate 1.50 mm 2-position socket | 8.5×8.0 mm | 1 | [WM14459CT-ND‎](https://www.digikey.com/product-detail/en/5025840260/WM14459CT-ND/6133190/) | The footprint should work for vertical- or horizontal-insert sockets. |
 | 21   | J4, J5                       | 2x2 SMD Pin Header         | SMD 2.52 mm pitch  | 2        | [WM9514-ND‎](https://www.digikey.com/product-detail/en/0015912040/WM9514-ND/3124153/) | |
-| 22   | H1, H2                       | Würth Redcube Screw Terminal | 7.0×4.3 mm       | 2        | [732-10896-1-ND‎](https://www.digikey.com/product-detail/en/7466310R/732-10896-1-ND/6644302/) | It remains to be seen how effective these will be. |
+| 22   | H1, H2                       | Würth Redcube Screw Terminal | 7.0×4.3 mm       | 2        | [732-10897-1-ND](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/7466313R/6643993) | |
 | 23   | HS1                          | Heatsink                   | 35×35×18 mm        | 1        | [HS396-ND‎](https://www.digikey.com/product-detail/en/374724B00032G/HS396-ND/1216400/) | How big should it be? Do I need a fan? |
 | 24   | TP1, TP2, TP3, TP4, TP5, TP6 | Test Point                 | 0603 (1608 Metric) | 6        | [2019-RCUCTECT-ND‎](https://www.digikey.com/product-detail/en/RCUCTE/2019-RCUCTECT-ND/11476593/) | Optional. |
 | 25   | LENS1                        | LEDiL Lens HB-SQ-W         | 25×25 mm           | 1        | [711-1589-ND‎](https://www.digikey.com/product-detail/en/C16369_HB-SQ-W/711-1589-ND/9095514/) | Is this necessary? Who knows. |
