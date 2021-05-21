@@ -1,12 +1,12 @@
-(module wuerth_7466313R (layer F.Cu) (tedit 60808337)
+(module wuerth_7466313R (layer F.Cu) (tedit 60A80D42)
   (fp_text reference REF** (at 0 2.794) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value wuerth_7466313R (at 0 -2.54) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_line (start 2.85 2.265) (end -2.85 2.265) (layer F.CrtYd) (width 0.12))
   (fp_line (start -2.85 -2.265) (end 2.85 -2.265) (layer F.CrtYd) (width 0.12))
+  (fp_line (start 2.85 2.265) (end -2.85 2.265) (layer F.CrtYd) (width 0.12))
   (fp_arc (start 0.1 0) (end 2.85 -2.265) (angle 79) (layer F.CrtYd) (width 0.12))
   (fp_arc (start -0.1 0) (end -2.85 2.265) (angle 79) (layer F.CrtYd) (width 0.12))
   (pad 1 smd custom (at 0 0) (size 1 1) (layers F.Cu F.Paste F.Mask)
@@ -30,7 +30,7 @@
     (zone_connect 0))
   (pad "" np_thru_hole circle (at -2.77 0 180) (size 0.97 0.97) (drill 0.97) (layers *.Cu *.Mask)
     (zone_connect 0))
-  (model ${KIPRJMOD}/projector_bulb.pretty/wuerth_7466310R.step
+  (model ${KIPRJMOD}/projector_bulb.pretty/wuerth_7466313R.step
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
